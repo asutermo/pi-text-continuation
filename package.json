@@ -1,0 +1,44 @@
+{
+  "name": "pi-text-continuation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Opt-in, bounded continuation for Pi text-only output-limit stops",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "files": [
+    "extensions/",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/text-continuation.mjs"
+    ]
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "lint": "eslint .",
+    "commit-check": "node scripts/commit-check.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asutermo/pi-text-continuation.git"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "continuation"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/asutermo/pi-text-continuation/issues"
+  },
+  "homepage": "https://github.com/asutermo/pi-text-continuation#readme",
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "1.0.0",
+    "eslint": "10.12.0"
+  }
+}
